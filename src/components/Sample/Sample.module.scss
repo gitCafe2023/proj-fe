@@ -1,0 +1,24 @@
+@use "../../global.scss" as mixin;
+
+.sample{
+    padding: 5px;
+    color: mixin.$color-red;
+
+
+    @include mixin.tablet{
+        color: blue;
+    }
+    // background-color: var(--color-green);
+    // height: var(--vp-lg);
+}
+
+.testColor{
+    color: mixin.$col-green;
+}
+
+@media screen and (min-width: var(--vp-lg)) {
+    .sample{
+        background-color: orange;
+    }
+    
+}

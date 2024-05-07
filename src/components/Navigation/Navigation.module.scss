@@ -1,0 +1,142 @@
+@use "../../styles/variables.scss" as var;
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.navTop {
+  display: flex;
+  justify-content: space-between;
+  color: var.$color-white;
+  background-color: var.$color-primary-dark;
+  padding: 0 8.75rem;
+}
+
+.navLeft {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+//   width: 50vw;
+}
+
+.inpSearch {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 15px;
+  background-color: #fff;
+  margin-right: 2rem;
+  i {
+    padding: 5px 0;
+    color: black;
+  }
+
+  input {
+    margin-left: 5px;
+    background-color: #fff;
+    border: #fff;
+    font-size: var.$text-normal;
+  }
+}
+
+.navRight {
+  display: flex;
+  flex:1/1;
+  justify-content: space-around;
+  //   align-items: center;
+//   padding-right: 15em;
+}
+
+.bl {
+  padding: 25px;
+  border-left: 1px solid #fff;
+  display: flex;
+  align-items: center;
+
+  .faBell{
+    // color: red;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+  }
+}
+
+.notifDetails {
+  border-right: 1px solid var.$color-white;
+  border-right: 1px solid var.$color-white;
+}
+
+.userDetails {
+  padding: 5px 25px;
+  border-left: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+
+  .name {
+  }
+
+  .role{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .circle {
+    background: #fa6383;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex; /* or inline-flex */
+    align-items: center;
+    justify-content: center;
+    font-size: var.$text-normal;
+    margin: 0 8px;
+  }
+}
+
+.navTitle {
+  font-size: 20px;
+  padding: 30px 0;
+}
+
+
+.navBot{
+    background-color: var.$color-primary-light;
+    color: var.$color-white;
+    display:flex;
+    padding: 0 8.75rem;
+
+    .opt{
+        padding: 34px 17px;
+        font-size: var.$text-normal;
+
+        &.active{
+            background-color: #264c90;
+        }
+    }
+}
+
+.breadcrumbs{
+    display: flex;
+    margin-top: 40px;
+    font-size: var.$text-normal;
+    padding-left: 34px;
+    align-items: center;
+
+    .item{
+        padding-left: 17px;
+        color: #887b7b;
+        &.active{
+            color:black;
+        }
+
+        i{
+            font-size: 10px;
+            margin-left: 7px;
+        }
+    }
+}
+
+
