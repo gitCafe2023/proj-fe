@@ -9,6 +9,9 @@ function Button({children, type='default'}){
     else if(type === 'success'){
         btnType='btn-green';
     }
+    else if(type === 'white'){
+        btnType='btn-white';
+    }
     else if(type === 'warning'){
         btnType='btn-orange';
     }

@@ -1,0 +1,108 @@
+@use "../../styles/variables.scss" as var;
+.container {
+  padding: 0 140px;
+  background-color: #f4f8fc;
+}
+
+.custGrid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  .col {
+    background-color: #fdd982;
+    padding: 5px;
+  }
+
+  .col-2 {
+    grid-column: span 2;
+    background-color: #ff634d;
+  }
+
+  .col-8 {
+    grid-column: span 8;
+  }
+
+  .col-4 {
+    grid-column: span 4;
+  }
+}
+
+.requestName {
+  font-size: 36px;
+}
+
+.requestHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.requestDetails {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+
+  .item {
+    display: flex;
+    font-size: 18px;
+
+    label {
+      font-weight: bold;
+    }
+    .val {
+      flex: 1;
+    }
+  }
+}
+
+.badge {
+  background-color: var.$color-green;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.customerDetails {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 2px;
+
+  .title {
+    font-size: 18px;
+  }
+
+  .requestDetails {
+    padding-left: 10px;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+
+    .item {
+      display: flex;
+      width: 70%;
+      font-size: 18px;
+
+      label {
+        font-weight: bold;
+      }
+      .val {
+        flex: 1;
+      }
+    }
+  }
+}
+
+.btnGroup{
+    margin-top: 27px;
+    display: flex;
+
+
+    *{
+        flex:1;
+    }
+}
+
+.receiptDetails {
+  background-color: #e4edf5;
+  padding: 20px;
+}

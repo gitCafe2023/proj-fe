@@ -50,19 +50,7 @@ function Navigation() {
 
         </nav>
 
-        <div className={styles.breadcrumbs}>
-            <div className={styles.item}>
-                Components 
-                <i className='fa fa-chevron-right'></i>
-            </div>
-            <div className={styles.item}>
-                Driver
-                <i className='fa fa-chevron-right'></i>
-            </div>
-            <div className={`${styles.item} ${styles.active}`}>
-                Create new driver
-            </div>
-        </div>
+
     </>)
 }
 

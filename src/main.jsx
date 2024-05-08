@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ButtonPage from './components/pages/ButtonPage.jsx';
 import './global.scss';
+import Request from './components/Request/Request.jsx';
 
 
 const router = createBrowserRouter([
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: '/button',
     element: <ButtonPage/>
+  },
+  {
+    path: '/request-page',
+    element: <Request/>
   }
 ]);
 

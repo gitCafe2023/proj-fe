@@ -88,7 +88,7 @@ h6 {
   #root {
     max-width: none;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
   }
 }
 
@@ -100,6 +100,10 @@ $black: #0000;
 
 $col-black: black;
 $col-green: green;
+
+body{
+    background-color: #f4f8fc;;
+}
 
 @mixin tablet {
   @media only screen and (min-width: 500px) {

@@ -118,25 +118,6 @@
     }
 }
 
-.breadcrumbs{
-    display: flex;
-    margin-top: 40px;
-    font-size: var.$text-normal;
-    padding-left: 34px;
-    align-items: center;
 
-    .item{
-        padding-left: 17px;
-        color: #887b7b;
-        &.active{
-            color:black;
-        }
-
-        i{
-            font-size: 10px;
-            margin-left: 7px;
-        }
-    }
-}
 
 

@@ -1,0 +1,30 @@
+@use '../../styles/variables.scss' as var;
+.container {
+  padding: 0 140px;
+  background-color: #f4f8fc;
+}
+
+.breadcrumbs {
+  display: flex;
+  padding-top: 40px;
+  font-size: var.$text-normal;
+//   padding-left: 34px;
+  align-items: center;
+
+  .item {
+
+    color: #887b7b;
+    &.active {
+      color: black;
+    }
+
+    i {
+      font-size: 10px;
+      margin-left: 7px;
+    }
+  }
+
+  .item:not(:first-child){
+    padding-left: 17px;
+  }
+}
